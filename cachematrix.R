@@ -30,8 +30,8 @@ makeCacheMatrix <- function(x = matrix()) {
 # first call will be set to NULL. If it is null it will get the matrix then perform the solve 
 # function on the matrix and update the object by using its setinverse function thus caching the
 # value and then finally returning the result. Further calls of the function will access the 
-# cached inverse value and enter the initial if statement calling the "getting cached data" message
-# and will return the cached value. 
+# cached inverse value and enter the initial "if statement" which will call the "getting cached data" 
+# message and will return the cached value. 
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
